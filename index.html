@@ -1,22 +1,33 @@
-<html>
-  <head>
-    <title>Voice Command Canvas</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Colourful Math Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body background="Screenshot 2023-03-13 at 7.54.32 PM.png" width="5000"> 
+  <div class="game-container">
+    <div class="header">
+      <div class="time-left">60</div>
+      <div class="score">0</div>
+    </div>
+    <div class="problem-container">
+      <div class="problem"></div>
+      <input type="text" class="answer-input" placeholder="Enter your answer">
+      <button class="submit-button" onclick="submitAnswer">Submit</button>
+    </div>
+    <button class="start-game-button">Start Game</button>
+    <div class="game-over">
+      <h2></h2>
+      <button class="play-again-button">Play Again</button>
+    </div>
+  </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
-
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-
-  <body>
-    <h3>Voice Command Canvas</h3>
-
-    <span id="status"></span> 
-    <button onclick="start();" class="btn btn-success">Draw</button>
-    <br><br>
-<script src="main.js"></script>
-  </body>
+  <label> 10 points = 1 chocolate
+	<br> 15 points = 2 chocolates
+	<br> 20 points and above = 5 chocolates <br>
+  </label>
+  
+  <script src="script.js"></script>
+</body>
 </html>
